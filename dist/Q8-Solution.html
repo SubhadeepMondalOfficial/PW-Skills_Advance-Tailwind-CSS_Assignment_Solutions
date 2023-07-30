@@ -1,0 +1,481 @@
+<!-- Q8. Moving forward with our previous assignment, we now have a coding challenge to design the final component of the landing page, which is the footer section. Below are some reference images to guide us -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquid</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ======================
+        Navigation Bar
+    ===========================-->
+    <nav class="bg-[#212224] text-white">
+      <!-- Nav Container -->
+      <div class="max-w-7xl m-auto flex justify-between py-4 px-2">
+        <!-- LOGO -->
+        <div>
+          <img
+            class="cursor-pointer"
+            src="Assets/Images/Liquid-logo.svg"
+            alt="Liquid Logo"
+          />
+        </div>
+        <!-- Create Account Button, Profile photo, Hamburger icon -->
+        <div class="flex justify-center items-center">
+          <button
+            class="hidden md:block mr-6 bg-[#fc5b3f] py-2 px-4 rounded-md font-bold text-sm cursor-pointer"
+          >
+            CREATE ACCOUNT
+          </button>
+          <img
+            class="w-10 hidden md:block cursor-pointer"
+            src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png"
+            alt=""
+          />
+          <span class="md:hidden text-xl"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="bg-[#212224] text-white">
+      <!-- ===================
+            Hero Section
+        ========================-->
+      <section class="max-w-7xl m-auto md:flex justify-between py-16 px-12">
+        <!-- Left Text Section -->
+        <div
+          class="flex flex-col items-start justify-center md:w-[50%] w-[100%]"
+        >
+          <div class="text-5xl md:text-7xl font-semibold mb-8">
+            Multi-regulated global broker.
+          </div>
+          <div class="text-gray-400 mb-8 text-md md:text-2xl md:pr-6">
+            A trusted destination for traders worldwide, Authorised by FCA, ASIC
+            & FSCA
+          </div>
+          <button
+            class="bg-transparent border-2 border-solid border-[#fc5b3f] py-3 px-12 md:w-[45%] w-[100%] rounded-md font-semibold"
+          >
+            DISCOVER ACCOUNTS
+          </button>
+        </div>
+
+        <!-- Hero Section Image -->
+        <div class="md:w-[50%] p-4">
+          <img
+            src="Assets/Images/hero-section_image.svg"
+            alt="Three people arranging puzzle"
+            class="w-[100%]"
+          />
+        </div>
+      </section>
+
+      <!-- ======================
+        Statistical Info Section
+    =============================-->
+      <section
+        class="max-w-7xl m-auto flex flex-col justify-center items-center md:flex-row md:justify-between md:flex-wrap pt-4 pb-9 px-2"
+      >
+        <!-- Alphabet -->
+        <div class="flex gap-6 mb-7">
+          <img src="Assets/Images/Alphabet.svg" alt="Alphabet Logo" />
+          <button
+            class="bg-green-400 px-[10px] py-[5px] rounded-md text-base text-black font-bold"
+          >
+            ^ 1,740.05
+          </button>
+        </div>
+
+        <!-- Microsoft -->
+        <div class="flex gap-6 mb-7">
+          <img src="Assets/Images/Microsoft.svg" alt="Microsoft Logo" />
+          <button
+            class="bg-green-400 px-[10px] py-[5px] rounded-md text-base text-black font-bold"
+          >
+            ^ 1,740.05
+          </button>
+        </div>
+
+        <!-- Facebook -->
+        <div class="flex gap-6 mb-7">
+          <img src="Assets/Images/Facebook.svg" alt="Facebook Logo" />
+          <button
+            class="bg-red-400 px-[10px] py-[5px] rounded-md text-base text-black font-bold"
+          >
+            v 1,740.05
+          </button>
+        </div>
+
+        <!-- Amazon -->
+        <div class="flex gap-6 mb-7">
+          <img src="Assets/Images/Amazon.svg" alt="Amazon Logo" />
+          <button
+            class="bg-green-400 px-[10px] py-[5px] rounded-md text-base text-black font-bold ml-5 md:ml-0"
+          >
+            ^ 1,740.05
+          </button>
+        </div>
+
+        <!-- Tesla -->
+        <div class="flex gap-6 mb-7">
+          <img src="Assets/Images/Tesla.svg" alt="Tesla Logo" />
+          <button
+            class="bg-red-400 px-[10px] py-[5px] rounded-md text-base text-black font-bold"
+          >
+            v 1,740.05
+          </button>
+        </div>
+      </section>
+
+      <!-- ======================
+        Informative Blog Section
+    =============================-->
+      <section class="bg-[#101112]">
+        <div class="max-w-7xl m-auto py-16 px-6">
+          <!-- First Row with text and button -->
+          <div class="flex justify-between items-center">
+            <div class="text-sm md:text-4xl font-bold flex flex-col pb-8">
+              <span>
+                Save time. Get
+                <span class="text-[#fc5b3f]">higher return.</span>
+              </span>
+              <span>Multiply wealth.</span>
+            </div>
+            <button
+              class="bg-transparent border-2 border-solid border-[#fc5b3f] py-2 md:py-3 px-2 md:px-6 rounded-md text-xs md:text-sm font-semibold md:w-auto mb-10"
+            >
+              FIND OUT MORE
+              <i class="fa-solid fa-chevron-right pl-2 md:pl-3"></i>
+            </button>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-3">
+            <!-- Grid Card 1 -->
+            <div class="bg-[#212224] px-8 pb-8 overflow-hidden rounded-md">
+              <img
+                src="Assets/Images/Informative_Blog_object-1.svg"
+                alt=""
+                class="relative top-[-80px] left-[20%]"
+              />
+              <div class="mt-[-100px]">
+                <h class="text-2xl font-bold">Various assets</h>
+                <p class="text-gray-400 text-lg pt-6">
+                  Duis aute irure dolor in reprehen derit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+
+            <!-- Grid Card 2 -->
+            <div class="bg-[#212224] px-8 pb-8 overflow-hidden rounded-md">
+              <img
+                src="Assets/Images/Informative_Blog_object-2.svg"
+                alt=""
+                class="relative top-[-80px] left-[20%]"
+              />
+              <div class="mt-[-100px]">
+                <h4 class="text-2xl font-bold">Market analysis</h4>
+                <p class="text-gray-400 text-lg pt-6">
+                  Duis aute irure dolor in reprehen derit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+
+            <!-- Grid Card 3 -->
+            <div class="bg-[#212224] px-8 pb-8 overflow-hidden rounded-md">
+              <img
+                src="Assets/Images/Informative_Blog_object-3.svg"
+                alt=""
+                class="relative top-[-80px] left-[20%]"
+              />
+              <div class="mt-[-100px]">
+                <h4 class="text-2xl font-bold">Enhanced tools</h4>
+                <p class="text-gray-400 text-lg pt-6">
+                  Duis aute irure dolor in reprehen derit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================
+        Features Offered Section
+    =============================-->
+      <section class="bg-white text-black">
+        <div
+          class="max-w-7xl m-auto py-16 px-6 grid gap-10 md:grid-cols-2 md:gap-16"
+        >
+          <!-- Offer card-1 -->
+          <div class="flex gap-6">
+            <img
+              src="Assets/Images/Feature_Offer_icon-1.svg"
+              alt=""
+              class="w-20 h-20"
+            />
+
+            <div>
+              <h3 class="text-2xl font-bold mb-4">Expert service</h3>
+              <p class="text-gray-500 text-lg mb-4">
+                Quis autem vel eum iure reprehenderit qui in voluptate velit
+                esse quam nihil molestiae consequatur.
+              </p>
+              <button class="text-gray-400 text-sm cursor-pointer">
+                LEARN MORE <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Offer card-2 -->
+          <div class="flex gap-6">
+            <img
+              src="Assets/Images/Feature_Offer_icon-2.svg"
+              alt=""
+              class="w-20 h-20"
+            />
+            <div>
+              <h3 class="text-2xl font-bold mb-4">Fully regulated</h3>
+              <p class="text-gray-500 text-lg mb-4">
+                Quis autem vel eum iure reprehenderit qui in voluptate velit
+                esse quam nihil molestiae consequatur.
+              </p>
+              <button class="text-gray-400 text-sm cursor-pointer">
+                LEARN MORE <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Offer card-3 -->
+          <div class="flex gap-6">
+            <img
+              src="Assets/Images/Feature_Offer_icon-3.svg"
+              alt=""
+              class="w-20 h-20"
+            />
+            <div>
+              <h3 class="text-2xl font-bold mb-4">Financial strength</h3>
+              <p class="text-gray-500 text-lg mb-4">
+                Quis autem vel eum iure reprehenderit qui in voluptate velit
+                esse quam nihil molestiae consequatur.
+              </p>
+              <button class="text-gray-400 text-sm cursor-pointer">
+                LEARN MORE <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Offer card-4 -->
+          <div class="flex gap-6">
+            <img
+              src="Assets/Images/Feature_Offer_icon-4.svg"
+              alt=""
+              class="w-20 h-20"
+            />
+            <div>
+              <h3 class="text-2xl font-bold mb-4">Integrated support</h3>
+              <p class="text-gray-500 text-lg mb-4">
+                Quis autem vel eum iure reprehenderit qui in voluptate velit
+                esse quam nihil molestiae consequatur.
+              </p>
+              <button class="text-gray-400 text-sm cursor-pointer">
+                LEARN MORE <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================
+        Step To Get Started Section
+    =============================-->
+      <section class="bg-white text-black">
+        <div class="max-w-7xl m-auto py-16 px-6">
+          <!-- ------------------------
+                Whole container Simple steps
+            ------------------------------>
+          <div class="border-2 border-[#fc5b3f] rounded-lg py-8 md:mx-14">
+            <div class="flex justify-center">
+              <h2
+                class="relative -top-12 bg-white px-4 text-2xl font-bold text-[#fc5b3f]"
+              >
+                Simple steps to start trade.
+              </h2>
+            </div>
+
+            <!-- .....................
+            Step 1 Register Account
+            ..........................-->
+            <div
+              class="flex flex-col gap-8 items-center md:flex-row justify-around"
+            >
+              <div class="flex flex-col gap-3 items-center">
+                <div
+                  class="text-center border-2 border-[#fc5b3f] rounded-full px-5 py-3 text-[#fc5b3f] font-bold text-xl"
+                >
+                  1
+                </div>
+                <div class="text-xl text-gray-500">Register account</div>
+              </div>
+
+              <!-- .....................
+            Step 2 Fund Your Account
+            ..........................-->
+              <div class="flex flex-col gap-3 items-center">
+                <div
+                  class="text-center border-2 border-[#fc5b3f] rounded-full px-5 py-3 text-[#fc5b3f] font-bold text-xl"
+                >
+                  2
+                </div>
+                <div class="text-xl text-gray-500">Fund your account</div>
+              </div>
+
+              <!-- .....................
+            Step 3 Start your Trading
+            ..........................-->
+              <div class="flex flex-col gap-3 items-center">
+                <div
+                  class="text-center border-2 border-[#fc5b3f] rounded-full px-5 py-3 text-[#fc5b3f] font-bold text-xl"
+                >
+                  3
+                </div>
+                <div class="text-xl text-gray-500">Start your trade</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ======================
+        News Articles Section
+    =============================-->
+    <section>
+      <section class="max-w-7xl m-auto px-6">
+        <h3 class="text-5xl font-bold mt-4 mb-8">Stay ahead of the curve.</h3>
+        <div class="grid md:grid-cols-3">
+          <!-- -------------------
+                News Container 1
+            ------------------------->
+          <div class="border-l-2 border-[#fc5b3f] py-6 px-10 relative">
+            <h3
+              class="bg-white absolute -left-11 px-4 transform rotate-90 text-xl font-semibold text-[#fc5b3f]"
+            >
+              NEWS
+            </h3>
+            <h3 class="text-3xl font-semibold">
+              Wall Street cautious on 'frothy' stocks, warn bitcoin bubble
+            </h3>
+            <p class="text-xl py-4">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              ...
+            </p>
+            <div class="text-xl font-bold">Read More -></div>
+          </div>
+
+          <!-- -------------------
+                News Container 2
+            ------------------------->
+          <div class="border-l-2 border-[#fc5b3f] py-6 px-10 relative">
+            <h3
+              class="bg-white absolute -left-11 px-4 transform rotate-90 text-xl font-semibold text-[#fc5b3f]"
+            >
+              NEWS
+            </h3>
+            <h3 class="text-3xl font-semibold">
+              Will AUD/USD Hit 0.8000 In The Foreseeable Future?
+            </h3>
+            <p class="text-xl py-4">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              ...
+            </p>
+            <div class="text-xl font-bold">Read More -></div>
+          </div>
+
+          <!-- -------------------
+                News Container 3
+            ------------------------->
+          <div class="border-l-2 border-[#fc5b3f] py-6 px-10 relative">
+            <h3
+              class="bg-white absolute -left-11 px-4 transform rotate-90 text-xl font-semibold text-[#fc5b3f]"
+            >
+              NEWS
+            </h3>
+            <h3 class="text-3xl font-semibold">
+              How Can You Use Volatility to Your Advantage
+            </h3>
+            <p class="text-xl py-4">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              ...
+            </p>
+            <div class="text-xl font-bold">Read More -></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- =============
+        Footer
+    ==================-->
+    <footer class="bg-[#212224] text-gray-400 mt-10">
+
+      <!-- ------------------
+        Main Footer Container
+      ------------------------>
+        <section class="max-w-7xl m-auto py-10 px-10 grid gap-10 md:grid-cols-[2fr,1fr,1fr,1fr]">
+
+          <!-- ................
+                Logo-----
+          .....................-->
+            <div>
+                <img src="Assets/Images/Liquid-logo.svg" alt="" class="">
+            </div>
+
+            <!-- ................
+              Markets Column
+            ....................-->
+            <div class="grid gap-3">
+                <h2 class="mb-3 text-white text-xl font-semibold">MARKETS</h2>
+                <div>Web Platform</div>
+                <div>Trading Apps</div>
+                <div>Meta Trader 5</div>
+                <div>Compare Features</div>
+            </div>
+
+            <!-- .................
+              Account Type Column
+            ......................-->
+            <div class="grid gap-3">
+                <h2 class="mb-3 text-white text-xl font-semibold">ACCOUNT TYPES</h2>
+                <div>Demo account</div>
+                <div>Standard account</div>
+                <div>ECN account</div>
+                <div>Islamic account</div>
+            </div>
+
+            <!-- ....................
+              Learn To Trade Column
+            .........................-->
+            <div class="grid gap-3">
+                <h2 class="mb-3 text-white text-xl font-semibold">LEARN TO TRADE</h2>
+                <div>News and trade ideas</div>
+                <div>Trading strategy</div>
+                <div>Forex trading course</div>
+            </div>
+
+        </section>
+    </footer>
+  </body>
+</html>
