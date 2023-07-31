@@ -969,6 +969,34 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+/* =====================================
+    Customized Scroll Bar for whole page
+ =========================================*/
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #212224;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #fc5b3f;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (min-width: 768px) {
   .md\:mx-14 {
     margin-left: 3.5rem;
